@@ -21,7 +21,7 @@ import { app } from "./app.js";
 // Load environment variables from the .env file using dotenv.
 // This allows you to configure sensitive data (e.g., database URIs, API keys) via environment variables.
 dotenv.config({
-    path: './env' // Specifies the path to the .env file (custom location './env')
+    path: './.env' // Specifies the path to the .env file (custom location './env')
 });
 
 /*
