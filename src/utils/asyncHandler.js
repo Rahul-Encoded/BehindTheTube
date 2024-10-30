@@ -4,7 +4,7 @@
 // asyncHandler function to handle asynchronous routes/middleware in Express
 const asyncHandler = (requestHandler) => {
     // Returning a new function that handles the request, response, and next middleware
-    (req, res, next) => {
+    return (req, res, next) => {
         // Using Promise.resolve() to handle the async function (requestHandler)
         // and catch any errors it throws, passing them to the next middleware (usually error handling)
         Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err));

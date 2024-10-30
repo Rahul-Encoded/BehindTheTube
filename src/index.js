@@ -15,6 +15,9 @@ import {DB_NAME} from "./constants.js";
 // Importing a connectDB function from the db directory that handles the MongoDB connection setup
 import connectDB from "../db/index.js"; 
 
+//
+import { app } from "./app.js";
+
 // Load environment variables from the .env file using dotenv.
 // This allows you to configure sensitive data (e.g., database URIs, API keys) via environment variables.
 dotenv.config({

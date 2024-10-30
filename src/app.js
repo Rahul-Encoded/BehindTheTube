@@ -36,5 +36,12 @@ app.use(express.static("public"));
 // - Useful for working with authentication tokens or session data stored in cookies
 app.use(cookieParser());
 
+//routes import
+import userRouter from './routes/user.routes.js';
+
+//routes declaration
+app.use("/api/v1/users", userRouter);
+
+// https://localhost:8000/api/v1/users/...whichever route you wish to go
 // Exporting the app object to use it in other parts of the application (like server.js)
 export { app };
