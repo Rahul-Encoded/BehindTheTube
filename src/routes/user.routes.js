@@ -29,6 +29,6 @@ router.route("/login").post(loginUser);
 
 //secured routes
 router.route("/logout").post(verifyJWT, logoutUser);
-ReadableStreamDefaultController.
+router.route("/refresh-token").post(refreshAccessToken);
 
 export default router;

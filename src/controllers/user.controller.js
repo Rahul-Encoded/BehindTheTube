@@ -201,6 +201,8 @@ const logoutUser = asyncHandler(async(req, res) => {
     .json(new ApiResponse(200, {}, "User logged out✅"))
 });
 
+//Access Token = short lived -> user ke pass hota hai
+//Refresh Token = session storage -> database = long lived
 const refreshAccessToken = asyncHandler(async (req, res) => {
     const incomingRefreshToken = req.cookies.refreshToken || req.body.refreshToken;
 
