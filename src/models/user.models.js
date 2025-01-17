@@ -41,7 +41,7 @@ const userSchema = new Schema({
     watchHistory: [
         {
             type: Schema.Types.ObjectId,    // References to Video objects (related content user has watched).
-            ref: "Video",                   // 'ref' should be 'ref' instead of 're', it's short for reference and points to the Video model.
+            ref: "Video",                   
         }
     ],
     password: {
